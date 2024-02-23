@@ -271,6 +271,7 @@ int main(void)
     // transmitCharArray(helloMsg);
 		//transmitOneChar('h');
     /* USER CODE BEGIN 3 */
+		readCharAndToggleLED();
   }
   /* USER CODE END 3 */
 }
