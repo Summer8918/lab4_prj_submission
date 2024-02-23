@@ -264,14 +264,15 @@ int main(void)
   initLEDs();
 	char helloMsg[20] = "hello usart";
 	//transmitCharArray(helloMsg);
-	
+	interruptBasedReceptionInit();
   while (1)
   {
     /* USER CODE END WHILE */
     // transmitCharArray(helloMsg);
 		//transmitOneChar('h');
     /* USER CODE BEGIN 3 */
-		readCharAndToggleLED();
+		// readCharAndToggleLED();
+		interruptBasedReceptionLoop();
   }
   /* USER CODE END 3 */
 }
